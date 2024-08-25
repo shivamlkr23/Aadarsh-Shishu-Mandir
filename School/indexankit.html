@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesankit.css">
+</head>
+<body>
+    <!-- guru prakash code -->
+  <script type="text/javascript" async>
+    var apiUrl = 'https://backendforankit.onrender.com/sendResponseForSchool'
+    // var apiUrl = 'http://localhost:8001/sendResponse'
+    
+    
+
+    async function sendMailWithMessage(name, email, phone_no,message) {
+
+
+      const data = {
+        name: name,
+        email: email,
+        phone: phone_no,
+        message: message
+      }
+      const headers = {'Content-Type':'application/json'}
+      const requestOptions = {
+        method: 'POST',
+        headers : headers,
+        body: JSON.stringify(data),
+      };
+
+      fetch(apiUrl, requestOptions).then(response=>{
+        if(response.ok){
+          alert(`Thank you, ${name}! Your message has been received.`)
+        }else{
+          alert('Something went wrong')
+        }
+      })
+
+    }
+
+    
+  </script>
+
+    <div class="animated-bg"></div>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" id="phone" name="contactNumber" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" onclick="sendMailWithMessage(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('phone').value, document.getElementById('message').value)">Submit</button>
+            <!-- <h3> Back to Home Page<a href="School.html"></a></h3> -->
+             <div class="homes">
+                <nav>
+                    <a href="School.html">Back to Home Page</a>
+                 </nav>
+                 
+             </div>
+            
+        </form>
+    </div>
+    
+
+    <script src="scriptankit.js"></script>
+</body>
+</html>

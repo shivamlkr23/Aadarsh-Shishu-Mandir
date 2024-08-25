@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsh Shishu Mandir</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="stylesankit.css"> -->
+    <style>
+        /* Custom Styles */
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        .navbar {
+            background-color: #003366;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #0056b3;
+            border-radius: 0.25rem;
+            color: #ffffff;
+        }
+        .dropdown-menu {
+            background-color: #003366;
+        }
+        .dropdown-item {
+            color: #ffffff;
+        }
+        .dropdown-item:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+        .modal-dialog {
+            max-width: 90%;
+            margin: 30px auto;
+        }
+        .modal-body {
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <img src="school-logo.png" alt="Aadarsh Shishu Mandir Logo" class="logo img-fluid">
+            <h1>Aadarsh Shishu Mandir</h1>
+            <p>CBSE Affiliated School | LKR027 | UDISE: 10252113601</p>
+            <p>Location: Chittranjan Road, Purana Bazar, Lakhisarai, Bihar-811311</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#aboutSchoolModal">About School</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#principalMessageModal">Principal's Message</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#secretaryMessageModal">Secretary's Message</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#holidayListModal">Holiday List</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#rulesRegulationsModal">Rules and Regulations</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#feeStructureModal">Fee Structure</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dressCodeModal">Dress Code</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#guardianGuidelinesModal">Guidelines for Guardians</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#schoolScheduleModal">School Schedule</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#admissionProcedureModal">Admission Procedure</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexankit.html">Enquiry Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="text-center py-5 bg-light">
+        <div class="container">
+            <h2>Welcome to Aadarsh Shishu Mandir</h2>
+            <p>Your child's future begins here. We nurture young minds with the best education and values.</p>
+            <img src="event9.jpg" alt="School Building" class="img-fluid mb-4">
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Gallery</h2>
+            <div class="row gallery">
+                <div class="col-md-3">
+                    <img src="event1.jpg" alt="Event 1" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="event2.jpg" alt="Event 2" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="event3.jpg" alt="Event 3" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="event4.jpg" alt="Event 4" class="img-fluid">
+                </div>
+				 <div class="col-md-3">
+                    <img src="event5.jpg" alt="Event 5" class="img-fluid">
+                </div>
+				 <div class="col-md-3">
+                    <img src="event6.jpg" alt="Event 6" class="img-fluid">
+                </div>
+				 <div class="col-md-3">
+                    <img src="event7.jpg" alt="Event 7" class="img-fluid">
+                </div>
+				 <div class="col-md-3">
+                    <img src="event8.jpg" alt="Event 8" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact" class="text-center py-5 bg-light">
+        <div class="container">
+            <h2>Contact Us </h2>
+            <p>If you have any queries or need further information, feel free to contact us:</p>
+			  <p><strong>Address:</strong> Chittranjan Road, Purana Bazar, Lakhisarai, Bihar-811311</p>
+            <p><strong>Email:</strong> shivendushivam7@gmail.com</p>
+            <p><strong>Phone:</strong> +91-9113124535 , +91-9122332225</p>
+           
+            </div> -->
+            
+            <!-- <div class="contact-form">
+                <form action="mailto:shivendushivam7@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div> -->
+        
+    <!-- </section> -->
+    <style>
+        /* Contact Section Styling */
+        #contact {
+            /* background-image: url('event2.jpg'); */
+            background-color: rgb(red, green, blue);
+            background-size: cover;
+            background-position: center;
+            color: #050505; /* Light text color for readability */
+            padding: 3rem 1rem; /* Adjust padding as needed */
+        }
+
+        #contact h2 {
+            background-color: orange;
+            background-size: cover;
+            color: #2907e8; /* Light color for headings */
+            margin-bottom: 1rem;
+        }
+
+        #contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background-color: #1290b6; /* Light background for the form */
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(50, 5, 230, 0.1); /* Subtle shadow for the form */
+            margin-top: 2rem;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form .form-control {
+            border: 1px solid #db0651; /* Light border for form controls */
+            border-radius: 0.25rem;
+            padding: 0.75rem 1.25rem;
+            width: 100%; /* Full width for input fields */
+        }
+
+        .contact-form .btn {
+            background-color: #282ea7; /* Green background for the button */
+            border-color: #e4e009; /* Matching border color */
+            color: #ffffff; /* White text color for the button */
+            padding: 0.75rem 1.2rem;
+            border: none;
+            border-radius: 0.20rem;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+
+        .contact-form .btn:hover {
+            background-color: #710404; /* Darker green on hover */
+            border-color: #db090c;
+        }
+    </style>
+</head>
+<body>
+    <section id="contact" class="text-center py-5 bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any queries or need further information, feel free to contact us:</p>
+            <p><strong>Address:</strong> Chittranjan Road, Purana Bazar, Lakhisarai, Bihar-811311</p>
+            <p><strong>Email:</strong> aadarshshishumandir027@gmail.com</p>
+            <p><strong>Phone:</strong> +91-9113124535 , +91-9122332225</p>
+            
+            <div class="contact-form">
+                <form action="mailto:shivendushivam7@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+	<!-- Modals -->
+    <!-- Modals for About Us -->
+    <div class="modal fade" id="aboutSchoolModal" tabindex="-1" role="dialog" aria-labelledby="aboutSchoolModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutSchoolModalLabel">About Aadarsh Shishu Mandir</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Aadarsh Shishu Mandir is a prestigious CBSE-affiliated school located in Lakhisarai, Bihar. It Was, established in 1999, is a prestigious private school managed by the Aadarsh Charitable Trust. Since its inception, the school has been dedicated to providing a well-rounded education, fostering academic excellence, and nurturing the holistic development of its students. With a strong emphasis on traditional values and modern education, Aadarsh Shishu Mandir offers a conducive learning environment where students are encouraged to achieve their full potential. The school's commitment to quality education and character building has made it a beacon of learning in the community.</p>
+                    <img src="event2.jpg" alt="School Campus" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="principalMessageModal" tabindex="-1" role="dialog" aria-labelledby="principalMessageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="principalMessageModalLabel">Principal's Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="principal.png" alt="Principal Gopal Kumar" class="img-fluid rounded-circle">
+                    <p>Dear Students and Guardians, welcome to our school. We are committed to providing the best education</p>
+					<p>At Aadarsh Shishu Mandir, we believe in fostering an environment where every student can reach their full potential. Our mission is to provide a well-rounded education that combines academic excellence with the development of essential life skills. We encourage our students to think critically, act responsibly, and lead with integrity. As we continue our journey together, I invite you to join hands with us in creating a brighter future for our children.</p>
+                <p>Sincerely,</p>
+                    <p><strong>Gopal Kumar</strong><br>Principal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="secretaryMessageModal" tabindex="-1" role="dialog" aria-labelledby="secretaryMessageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="secretaryMessageModalLabel">Secretary's Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="secretary.png" alt="Secretary Sima Devi" class="img-fluid rounded-circle">
+                    <p>Dear Students and Guardians, we are dedicated to supporting the educational journey of each student</p>
+					<p>As the Secretary of Aadarsh Shishu Mandir, I am deeply committed to ensuring that our school remains a nurturing environment for all students. We are focused on creating a supportive atmosphere where students are encouraged to explore their passions and achieve their goals. Together, let's work towards building a strong community that values education and upholds the highest standards of learning.</p>
+                <p>Warm regards,</p>
+                    <p><strong>Sima Devi</strong><br>Secretary</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Academics -->
+    <div class="modal fade" id="holidayListModal" tabindex="-1" role="dialog" aria-labelledby="holidayListModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="holidayListModalLabel">Holiday List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="holiday-list.pdf" class="btn btn-primary" download>Download Holiday List PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="rulesRegulationsModal" tabindex="-1" role="dialog" aria-labelledby="rulesRegulationsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rulesRegulationsModalLabel">Rules and Regulations</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><div style="text-align: justify;">
+	<span style="color:#b22222;"><span style="font-size:16px;"><strong>Rules-Regulations</strong></span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Absence without leave is seriously viewed and in </span><span style="font-size:14px;">case</span><span style="font-size:14px;"> of ten consecutive days of absence, </span><span style="font-size:14px;">name</span><span style="font-size:14px;"> of the pupil shall be struck off the rolls. She/he would be re-admitted after she/he has paid all the dues with </span><span style="font-size:14px;">fresh</span><span style="font-size:14px;"> admission fee and that too at the discretion of the Principal.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Leave should be taken in advance or absentee note be sent through student&rsquo;s diary if the absence is on the compelling ground.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">All the students are expected to attend the classes on the opening and closing day before/after vacations. Absence because of sickness must be supported with a medical certificate. Students attending the school after suffering from an infectious disease such as measles, chickenpox, cholera, mumps, whooping cough etc. must produce a fitness certificate from the competent authority.</span></li>
+</ul>
+<div style="text-align: justify;">
+	&nbsp;</div>
+<div style="text-align: justify;">
+	<span style="color:#b22222;"><span style="font-size:16px;"><strong>Attendance</strong></span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">75% attendance is essential for promotion to the next higher class as it is mandatory as per CBSE norms.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">No leave is granted except on prior application from parents / guardians for genuine reasons.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">In </span><span style="font-size:14px;">case</span><span style="font-size:14px;"> of sickness , a medical certificate from a registered medical practitioner has to be submitted. Repeated absence without leave or unexplained leave for six consecutive days renders a student liable to have his name struck off the </span><span style="font-size:14px;">rools</span><span style="font-size:14px;">.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">It is compulsory for a student to attend the school on the first day after Summer Vacation, Puja Vacations,Winter break and on all Saturdays.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Code of Conduct For Students</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">All the students are expected to conduct themselves as worthy citizens at all times in all places.The school insists on strict punctuality, regularity, cleanliness in dress and personal hygiene, general </span><span style="font-size:14px;">grooming</span><span style="font-size:14px;"> and fidelity to study and work assignments.The students are to follow the instructions of the teachers and school authorities to observe school norms and not to violate the rules and regulations of the school.</span></li>
+</ul>
+<div style="text-align: justify;">
+	&nbsp;</div>
+<div style="text-align: justify;">
+	<span style="color:#b22222;"><strong><span style="font-size:16px;">Withdrawals</span></strong></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Withdrawals from any class must be preceded by a month&rsquo;s notice in writing or one month&rsquo;s fee in lieu of notice.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">All dues will have to be cleared off before a transfer certificate is issued.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">The school authorities may ask, without prior notice to the parents to withdraw the child from the school on ay one of the following grounds.&nbsp;</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Academic: Constant neglect of studies or failure in the same class for two consecutive sessions.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Disciplinery</span><span style="font-size:14px;">: Those students whose conduct in the opinion of the principal is harmful in the interest of the school.</span></li>
+</ul>
+<div style="text-align: justify;"></p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="feeStructureModal" tabindex="-1" role="dialog" aria-labelledby="feeStructureModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="feeStructureModalLabel">Fee Structure</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="fee-structure.pdf" class="btn btn-primary" download>Download Fee Structure PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="dressCodeModal" tabindex="-1" role="dialog" aria-labelledby="dressCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dressCodeModalLabel">Dress Code</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+					<div style="text-align: justify;">
+	<strong style="font-size: 18px; color: rgb(178, 34, 34);">School Uniform For Girls</strong></div>
+<div style="text-align: justify;">
+	<strong><span style="font-size:16px;">Summer</span></strong></div>
+<ul>
+	<li style="text-align: justify;">
+		White shirt (Half Sleeve), Blue skirt (upto knees) Tie and Belt, salwar suit for Std. 5 to 8.</li>
+</ul>
+<div style="text-align: justify;">
+	<strong>Winter (November to March)</strong></div>
+<ul>
+	<li style="text-align: justify;">
+		White full sleeve shirts, Blue trousers, Maroon machine- knit plain V-neck pullovers</li>
+<div style="text-align: justify;">
+	&nbsp;</div>
+<div style="text-align: justify;">
+	<strong style="font-size: 18px; color: rgb(178, 34, 34);">School Uniform For Boys</strong></div>
+<div style="text-align: justify;">
+	<strong><span style="font-size:16px;">Summer</span></strong></div>
+<ul>
+	<li style="text-align: justify;">
+		White half-sleeve shirt, Blue trousers, Black socks, Black plain shoes, Tie, Belt & Badge.</li>
+</ul>
+<div style="text-align: justify;">
+	<strong>Winter (November to March)</strong></div>
+<ul>
+	<li style="text-align: justify;">
+		White full sleeve shirts, Blue trousers, Maroon machine- knit plain V-neck pullovers.</li>
+<div style="text-align: justify;">
+	&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="guardianGuidelinesModal" tabindex="-1" role="dialog" aria-labelledby="guardianGuidelinesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guardianGuidelinesModalLabel">Guidelines for Guardians</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+				<p><div style="text-align: justify;">
+	<span style="color:#b22222;"><span style="font-size:16px;"><strong>Do's</strong></span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Use the school diary as a means of communication with the class teacher and check the diary for homework and teacher’s remark if any.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Sign the test copies /papers, notices and circulars as and when sent home.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">See that your ward has all the text books, items of stationary, craft materials etc .and all the books and notebooks are covered with brown paper.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Ensure that your ward comes to school in proper uniform with polished shoes, trimmed hair, and clean nails and with identity card / Transport Card provided by the school.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Send the children regularly and punctually to School No absence will be permitted without a leave application and late comers will not be allowed to attend the classes.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Intimate the school in case of change in address, telephone numbers.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">The parents / guardians must attend the parent – teacher meets.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">General rules and fee rules may kindly be adhered strictly.</span>
+</ul>
+			<p><div style="text-align: justify;">
+	<span style="color:#b22222;"><span style="font-size:16px;"><strong>Dont’s</strong></span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Do not send the child to school in case of an infectious disease and a medical certificate should be furnished from a medical authority at the time of rejoining the school after illness.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Do not walk the class room, or meet the teacher directly. Please see the teacher with prior appointment through the Principal / in charge.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:14px;">Do not send money or valuable articles with the students.</span></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="schoolScheduleModal" tabindex="-1" role="dialog" aria-labelledby="schoolScheduleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="schoolScheduleModalLabel">School Schedule</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Details about the school schedule</p>
+					<p>सोमवार दिनांक 8.07.2024 से स्कूल का समय परिवर्तिन किया जा रहा है।</P>
+					<p>Pray+ Yoga -    8:20   -   9:10</p>
+					<p>Ist period -          9:15   -    10:00</p>
+					<p>IInd Period         10:00  -     10:45</p>
+					<p>IIIrd Period       10:45   -     11:30</p>
+					<p>IVth Period -    11:30   -     12:15</p>
+					<p>Lunch -          12:15    -    12:35</p>
+					<p>Vth Period -     12:40    -    1:20</p>
+					<p>VIth Period     01:20   -    2:00</P>
+                    <a href="school-schedule.pdf" class="btn btn-primary" download>Download School Schedule PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="admissionProcedureModal" tabindex="-1" role="dialog" aria-labelledby="admissionProcedureModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="admissionProcedureModalLabel">Admission Procedure</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+					<p>DOCOUMENTS REQUIRED FOR ADMISSION:</p>
+					<p>1. PHOTOGRAPHS : 3 PASSPORT SIZE OF THE STUDENT AND 1 FOR FATHER AND MOTHER AND 1 FOR LOCAL GUARDIAN(IN CASE OF FATHER OR MOTHER ARE NOT PRESENT)</p>
+					<p>2. BIRTH CERTIFICATE : ISSUED BY THE COMPETANT AUTHORITY</p>
+					<p>3. TC/SLC : OF PREVIOUS SCHOOL/CLASS PASSED</p>
+					<p>4. CASTE CERTIFICATE : FOR STUDENTS BELONGS TO RESERVED CATEGORY</p>
+					<p>5. MEDICAL FITNESS CERTIFICATE: FROM REGISTERED MEDICAL PRACTITIONER (M.B.B.S)<p>
+					<p>6. BLOOD GROUP REPORT : FROM REGISTERED PATHOLAB</p>
+					<p>7. A COPY OF AADHAR CARD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<footer>
+  <p>&copy; 2024 Aadarsh Shishu Mandir. All rights reserved.Design by Shivendu Shivam & Maintained by ACCENUTRIX</p>
+</footer>
